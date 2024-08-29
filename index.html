@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Netflix</title>
+<meta name="description" content="Video streaming website Netflix clone. Frontend - HTML5, Pure CSS3 [flexbox], JS, OWL Carousel, JQuery |" />
+    <meta name="robots" content="index, follow" />
+	
+	<!-- og properties -->
+	
+	<meta property="og:site_name" content="Rajesh Royal" />
+	<meta property="article:publisher" content="https://www.facebook.com/Rajesh.royal.896/" />
+
+	<meta property="og:image" content="../images/site-image-description.PNG" />
+
+	<!-- -->
+    
+    <link rel="stylesheet" href="../assets/lib/owl.carousel.css" />
+    <script src="../assets/lib/jquery 3.5.0.js"></script>
+    <script src="../assets/lib/owl.carousel.js"></script>
+
+
+    <!--main script file-->
+    <script src="../assets/js/main-script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" integrity="sha256-t2kyTgkh+fZJYRET5l9Sjrrl4UDain5jxdbqe8ejO8A=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/browse.css">
+    
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <main id="mainContainer" class="p-b-40">
+        <div>
+            <header class="d-flex space-between flex-center flex-middle">
+                <div class="nav-links d-flex flex-center flex-middle">
+                    <a href="#">
+                        <h2 class="logo logo-text red-color f-s-28 m-r-25">NETFLIX</h2>
+                        <h2 class="second-logo-text red-color f-s-28">N</h2>
+                    </a>
+                    <a href="#" class="nav-item home">Home</a>
+                    <a href="#" class="nav-item">TV Show</a>
+                    <a href="#" class="nav-item">Movies</a>
+                    <a href="#" class="nav-item latest">Latest</a>
+                    <a href="#" class="nav-item">My List</a>
+                </div>
+                <div class="righticons d-flex flex-end flex-middle">
+                    <a href="#"><img src="icons/search.svg" alt="search icon"></a>
+                    <div class="dropdown notification">
+                        <img src="icons/notification.svg" alt="notificatio icon">
+                        <div class="dropdown-content">
+                            <a href="#" class="profile-item d-flex flex-middle">
+                                <img src="icons/user2.png" alt="user profile icon" class="user-icon">
+                                <span>Today is your Birthday</span></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <img src="icons/user-image-green.png" alt="user profile icon" class="user-icon"> <span class="profile-arrow"></span>
+
+                        <div class="dropdown-content">
+                            <div class="profile-links">
+                                <a href="#" class="profile-item d-flex flex-middle">
+                                    <img src="icons/user1.png" alt="user profile icon" class="user-icon">
+                                    <span>Happy</span>
+                                </a>
+                                <a href="#" class="profile-item d-flex flex-middle">
+                                    <img src="icons/user2.png" alt="user profile icon" class="user-icon">
+                                    <span>Birthday</span>
+                                </a>
+                                <a href="#" class="profile-item last" >Manage Profiles</a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="links d-flex direction-column">
+                                <a href="#">Account</a>
+                                <a href="#">Help Center</a>
+                                <a href="#">Sign Out of Netflix</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+
+            <!-- hero section -->
+            <div class="">
+                <section id="browse-dashboard" class=" d-flex direction-column flex-start middle-align">
+                    <div>
+                        <!--trailer video-->
+                        <video class="hero-background-image" id="hero-video"
+                            poster="photos/poster.png">
+                        </video>
+
+                        
+                        <!--left shadow-->
+                        <div class="shadow-layer"></div>
+                    </div>
+
+                    <div class="container text-container" style="z-index: 5;">
+                        <div class="contentlogo">
+                            <img src="photos/happy birthday.png" alt="content logo"
+                                class="show-logo" />
+                        </div>
+                        <!--top 10 ranking badge svg-->
+                        <div class="ranking d-flex m-t-20 flex-middle">
+                            <span class="p-l-10">The only way to say <br>Happy Birthday to Kak Gess</span>
+                        </div>
+                        <div class="synopsis m-t-20" style="max-width: 500px;">
+                            <p>
+                                Haiii kak gess, Happy Birthdayy 🎉🥳❤<br>
+                                its been 21 years since i know you as a big sister. Selamatt yah kak udah menjalani quarter life phase. you have been a great big sister to me and kak encak.
+                                we are so proud of you. maacii yahh udah sering ngebantu adek-adeknya sama mama ayah kakk. sorry ndak ada kadoo buat kakak karna ndak tau mau ngasii apa wkwkkw.
+                                semogaa hari ini jadi hari yang baik yahh untuk kakak, semoga di surprise-in sama temen kantor ato pacarnya wkwkkw.
+                                <br> <br> I hope you get everything you've ever dreamed of in this world!
+
+                                <br> *press the play button to play the music! (the other button doesnt work hihi.)
+
+                            </p>
+                        </div>
+                        <audio poster="photos/poster.png" id="audio-player" src="photos/end of beginning.mp3" type="audio/mpeg"></audio>
+
+                        <div class="buttons-container m-t-20">
+                            <button class="play-button" onclick="playAudio()">
+                                <span>
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M6 4l15 8-15 8z" fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                                <a href="javascript:void(0);">Play</a>
+                            </button>
+
+                            <button class="more-info-button m-t-20"><span>
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10zm-2 0a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8zm-9 6v-7h2v7h-2zm1-8.75a1.21 1.21 0 0 1-.877-.364A1.188 1.188 0 0 1 10.75 8c0-.348.123-.644.372-.886.247-.242.54-.364.878-.364.337 0 .63.122.877.364.248.242.373.538.373.886s-.124.644-.373.886A1.21 1.21 0 0 1 12 9.25z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </span> 
+                                More Info
+                            </button>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="black-background">
+
+            <section id="romantic" class="container p-t-40">
+                <h4 class="romantic-heading">
+                    Cute Photos of You
+                </h4>
+                <div class="romantic-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
+                    <a href="#">
+                        <img src="photos/1.jpg.png" alt=""
+                            class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                    <a href="#">
+                        <img src="photos/2.jpg.png" alt=""
+                            class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                    <a href="#">
+                        <img src="photos/3.jpg.png" alt=""
+                            class="mylist-img p-r-10 p-t-10 image-size item position-relative overflow-hidden"></a>
+                    <a href="#">
+                        <img src="photos/4.jpg.png" alt=""
+                            class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                    <a href="#">
+                        <img src="photos/5.jpg.png" alt=""
+                            class="mylist-img p-r-10 p-t-10 image-size item"></a>
+
+                    <a href="#">
+                        <img src="photos/6.jpg.png" alt=""
+                            class="mylist-img p-r-10 p-t-10 image-size item"></a>
+
+                </div>
+            </section>
+
+            <section id="romantic" class="container p-t-40">
+                    <h4 class="romantic-heading">
+                        Meme of You
+                    </h4>
+                    <div class="romantic-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
+                        <a href="#">
+                            <img src="photos/7.jpg.png" alt=""
+                                class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                        <a href="#">
+                            <img src="photos/8.jpg.png" alt=""
+                                class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                        <a href="#">
+                            <img src="photos/9.jpg.png" alt=""
+                                class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                        <a href="#">
+                            <img src="photos/10.jpg.png" alt=""
+                                class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                        <a href="#">
+                            <img src="photos/11.jpg.png" alt=""
+                                class="mylist-img p-r-10 p-t-10 image-size item"></a>
+
+                        <a href="#">
+                            <img src="photos/12.jpg.png" alt=""
+                                class="mylist-img p-r-10 p-t-10 image-size item"></a>
+
+                    </div>
+                </section>
+        <footer class="mainfooter d-flex direction-column space-between" id=" footer">
+            <div class="container footer-container flex-start">
+                <div class="widgets d-flex space-between">
+                    <div class="first-widget">
+                        <ul>
+                            <li class="list-item">Audio and Subtitles</li>
+                            <li class="list-item">Media Center</li>
+                            <li class="list-item">Privacy</li>
+                            <li class="list-item"><a href="https://www.instagram.com/yoelsrg_/">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="second-widget">
+                        <ul>
+                            <li class="list-item">Help Center</li>
+                            <li class="list-item">Cookie</li>
+                            <li class="list-item">Jobs</li>
+                        </ul>
+                    </div>
+                    <div class="third-widget">
+                        <ul>
+                            <li class="list-item">Audio Description</li>
+                            <li class="list-item">Investor Relations</li>
+                            <li class="list-item">Legal Notice</li>
+                        </ul>
+                    </div>
+                    <div class="forth-widget">
+                        <ul>
+                            <li class="list-item">Gift Card</li>
+                            <li class="list-item">Term Of Use</li>
+                            <li class="list-item">Corporate Information</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="button service">Service Code</button>
+                <p class="copyright">@copyright 2024 yoel, Inc.</p>
+            </div>
+
+
+        </footer>
+        </div>
+
+        
+    </main>
+
+    <div class="footer-navigation d-flex space-between">
+        <a href="" class="nav-item active">
+            <i class="fa fa-home" aria-hidden="true"></i> </br>
+            Home
+        </a>
+        <a href="" class="nav-item">
+            <i class="fa fa-search" aria-hidden="true"></i></br>
+            Search
+        </a>
+        <a href="" class="nav-item">
+            <i class="fa fa-film" aria-hidden="true"></i></br>
+            Latest
+        </a>
+        <a href="" class="nav-item">
+            <i class="fa fa-user" aria-hidden="true"></i></br>
+            Account
+        </a>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("audio-player");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+        // Ambil elemen popup dan tombol close
+var popup = document.getElementById("popup");
+var closeBtn = document.getElementById("closePopup");
+
+// Ketika tombol More Info diklik, popup akan muncul
+document.querySelector('.more-info-button').addEventListener('click', function() {
+    popup.style.display = "block";
+});
+
+// Ketika tombol close diklik, popup akan tertutup
+closeBtn.onclick = function() {
+    popup.style.display = "none";
+}
+
+// Ketika pengguna mengklik di luar popup, popup akan tertutup
+window.onclick = function(event) {
+    if (event.target == popup) {
+        popup.style.display = "none";
+    }
+}
+
+    </script>
+</body>
+
+</html>
